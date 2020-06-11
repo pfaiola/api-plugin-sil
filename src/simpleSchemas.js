@@ -1,8 +1,4 @@
 import SimpleSchema from "simpl-schema";
-import {
-    Shop
-} from '/imports/collections/schemas';
-
 /**
  * @name ShopHours
  * @memberof Schemas
@@ -37,5 +33,3 @@ const schemaExtension = {
         type: ShopHours
     }
 }
-
-Shop.extend(schemaExtension);
