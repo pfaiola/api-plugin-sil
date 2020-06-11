@@ -1,7 +1,7 @@
 import pkg from "../package.json";
-import schemas from './schemas';
-import resolvers from './resolvers';
-import { ShopHours } from './simpleSchemas';
+import schemas from './schemas/index.js';
+import resolvers from './resolvers/index.js';
+import { ShopHours } from './simpleSchemas.js';
 
 /**
  * @summary Import and call this function to add this plugin to your API.
