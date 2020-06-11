@@ -1,7 +1,7 @@
 {
-  "name": "@reactioncommerce/api-plugin-example",
-  "description": "Boilerplate Example plugin for the Reaction API",
-  "version": "0.0.0-development",
+  "name": "@reactioncommerce/api-plugin-sil",
+  "description": "Sell It Live plugin",
+  "version": "1.0.0-development",
   "main": "index.js",
   "type": "module",
   "engines": {

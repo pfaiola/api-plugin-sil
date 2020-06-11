@@ -1,0 +1,4 @@
+extend type Shop {
+    "The Shop Number"
+    shopNo: String
+}
