@@ -11,10 +11,72 @@ input ShopHoursInput {
 }
 
 "Input parameters for the updateShop mutation"
-extend input UpdateShopInput {
+input UpdateStoreInput {
+  "An address book entry to set the primary shop's address"
+  addressBook: [AddressInput]
+
+  "Whether to allow user to checkout without creating an account"
+  allowGuestCheckout: Boolean
+  
+  "The base unit of length"
+  baseUOL: String
+
+  "The base unit of Measure"
+  baseUOM: String
+
+  "ID of media record to be used as the brand asset"
+  brandAssets: ID
+
+  "An optional string identifying the mutation call, which will be returned in the response payload"
+  clientMutationId: String
+
+  "The shop's currency"
+  currency: String
+
+  "Default parcel size used for this shop"
+  defaultParcelSize: ShopParcelSizeInput
+
+  "The shop's description"
+  description: String
+
+  "The shops primary email address"
+  emails: [EmailRecordInput]
+
+  "The shop's keywords"
+  keywords: String
+
+  "The shop's language"
+  language: String
+
+  "The shop's name"
+  name: String
+
+  "The ID of the shop to update"
+  shopId: ID!
+
+  "Object of shop logo urls "
+  shopLogoUrls: ShopLogoUrlsInput
+
   "Shop Number"
   shopNo: String
 
   "The Shop Hours"
   shopHours: [ShopHoursInput]
+
+  "Shop's slug"
+  slug: String
+
+  "Object of storefront routes urls"
+  storefrontUrls: StorefrontUrlsInput
+
+  "The shop's timezone"
+  timezone: String
+}
+
+extend type Mutation {
+  "Given shop data, update the Shops collection with this data"
+  updateShop(
+    "Mutation input"
+    input: UpdateStoreInput!
+  ): UpdateShopPayload!
 }
