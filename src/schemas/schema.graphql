@@ -1,4 +1,21 @@
+type ShopHours {
+    "Identifier"
+    id: String
+
+    "Day of Week"
+    day: Integer
+
+    "Start time"
+    start: String
+
+    "End time"
+    end: String
+}
+
 extend type Shop {
     "The Shop Number"
     shopNo: String
+
+    "The Shop Hours"
+    shopHours: [ShopHours]
 }
