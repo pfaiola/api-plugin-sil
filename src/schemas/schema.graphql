@@ -3,7 +3,7 @@ type ShopHours {
     id: String
 
     "Day of Week"
-    day: Integer
+    day: Int
 
     "Start time"
     start: String
