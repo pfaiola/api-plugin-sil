@@ -97,7 +97,7 @@ const complexSettings = [
 ];
 
 /**
- * @name shop/updateShop
+ * @name shop/updateStorefront
  * @memberof Mutations/Shop
  * @method
  * @summary Updates data on the Shop object

@@ -1,6 +1,9 @@
 import pkg from "../package.json";
 import schemas from './schemas/index.js';
 import mutations from './mutations/index.js';
+import resolvers from './resolvers/index.js';
+import queries from './queries/index.js';
+
 import { ShopHours } from './simpleSchemas.js';
 
 /**
@@ -14,11 +17,14 @@ export default async function register(app) {
     name: "sil",
     version: pkg.version,
     graphQL: {
-      schemas
+      schemas,
+      resolvers
     }, 
     mutations,
+    queries,
     shop: {
       shopNo: "shopNo",
+      shopType: "shopType",
       shopHours: ["shopHours"]
     },
     simpleSchemas: {

@@ -1,4 +1,4 @@
-import updateStorefront from "./updateShop.js";
+import updateStorefront from "./updateStorefront.js";
 
 export default {
     updateStorefront
