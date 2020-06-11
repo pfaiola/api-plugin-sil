@@ -1,5 +1,5 @@
-import updateShop from "./updateShop.js";
+import updateStorefront from "./updateShop.js";
 
 export default {
-    updateShop
+    updateStorefront
 }

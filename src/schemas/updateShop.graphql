@@ -75,7 +75,7 @@ input UpdateStoreInput {
 
 extend type Mutation {
   "Given shop data, update the Shops collection with this data"
-  updateShop(
+  updateStorefront(
     "Mutation input"
     input: UpdateStoreInput!
   ): UpdateShopPayload!

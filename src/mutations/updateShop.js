@@ -116,7 +116,7 @@ const complexSettings = [
  * @param {Object} input.storefrontUrls - An object containing storefront url locations
  * @returns {Promise<Object>} with updated shop
  */
-export default async function updateShop(context, input) {
+export default async function updateStorefront(context, input) {
   const { collections } = context;
   const { Shops } = collections;
   console.log("sil - updateshops");
