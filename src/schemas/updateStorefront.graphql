@@ -1,5 +1,7 @@
 "Shop Hours"
 input ShopHoursInput {
+  id: String
+  
   "Day of the week"
   day: Int
 

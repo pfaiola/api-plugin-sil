@@ -8,14 +8,21 @@ import SimpleSchema from "simpl-schema";
  * @property {String} end required
  */
 export const ShopHours = new SimpleSchema({
+    id: {
+        type: String,
+        optional: true
+    },
     day: {
-      type: String
+      type: Number,
+      optional: true
     },
     start: {
-      type: String
+      type: String,
+      optional: true
     }, 
     end: {
-      type: String
+      type: String,
+      optional: true
     }
   });
 
