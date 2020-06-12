@@ -34,6 +34,7 @@ export default async function updateStorefront(_, { input }, context) {
   }
 
   const updateStorefont = await context.mutations.updateStorefront(context, {
+    shopType: 'Store',
     ...passThroughInput,
     shopId
   });
