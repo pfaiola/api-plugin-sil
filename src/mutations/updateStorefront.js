@@ -119,7 +119,7 @@ const complexSettings = [
 export default async function updateStorefront(context, input) {
   const { collections } = context;
   const { Shops } = collections;
-  console.log("sil - updateshops");
+  console.log("sil - updateStorefront");
 
   inputSchema.validate(input || {});
 
