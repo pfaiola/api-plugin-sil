@@ -33,7 +33,7 @@ export default async function updateStorefront(_, { input }, context) {
     passThroughInput.brandAssets = decodeMediaRecordOpaqueId(passThroughInput.brandAssets);
   }
 
-  const updateStorefont = await context.mutations.updateStorefont(context, {
+  const updateStorefont = await context.mutations.updateStorefront(context, {
     ...passThroughInput,
     shopId
   });
